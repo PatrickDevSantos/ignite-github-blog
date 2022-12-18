@@ -9,19 +9,10 @@ import { ptBR } from 'date-fns/locale'
 import { parseISO } from "date-fns/esm";
 
 export function Issue() {
-  const [issue, setIssue] = useState<IssueType>({} as IssueType)
-  const { number } = useParams()
-  const teste = useLocation()
-
-  console.log(teste)
-
-  useEffect(() => {
-    async function load() {
-      const { data } = await api.get(`/repos/PatrickDevSantos/ignite-github-blog/issues/${number}`)
-      setIssue(data)
-    }
-    load()
-  }, [])
+  const [issue, setIssue] = useState<IssueType>(() => {
+    const props = useLocation()
+    return props.state.issue
+  })
 
   return (
     <Container>
@@ -33,7 +24,7 @@ export function Issue() {
         <h1>{issue.title}</h1>
         <div className="links">
           <a href=""><FaGithub size={18} /> {issue.user?.login}</a>
-          <a href=""><FaCalendarDay size={18} /> {issue.created_at && formatDistanceToNow(parseISO(issue.created_at), { locale: ptBR, addSuffix: true })}</a>
+          <a href=""><FaCalendarDay size={18} /> {formatDistanceToNow(parseISO(issue.created_at), { locale: ptBR, addSuffix: true })}</a>
           <a href=""><FaComment size={18} /> {issue.comments} Comentários</a>
         </div>
       </IssueInfo>
