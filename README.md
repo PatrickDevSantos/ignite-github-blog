@@ -1,7 +1,7 @@
-<img align="right" width="50%" src="https://user-images.githubusercontent.com/105234877/183103136-68733a64-1b13-49a6-98d9-93c288cc2051.svg" />
+<img align="right" width="50%" src="https://user-images.githubusercontent.com/105234877/208275122-3fd00209-86a3-49df-83fc-485f92b574ff.svg" />
 <h1 align="left">Github blog</h1>
 <p>Projeto desenvolvido com ReactJS, desafio do curso Ignite da Rocketseat</p>
-<h3>Funcionalidades</h3>
+<h3>Desfio proposto</h3>
 
 - Listagem do seu perfil com imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub.
 
