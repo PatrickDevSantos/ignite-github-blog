@@ -1,4 +1,4 @@
-<img align="right" width="50%" src="https://user-images.githubusercontent.com/105234877/208275122-3fd00209-86a3-49df-83fc-485f92b574ff.svg" />
+<img align="right" width="30%" src="https://user-images.githubusercontent.com/105234877/208275122-3fd00209-86a3-49df-83fc-485f92b574ff.svg" />
 <h1 align="left">Github blog</h1>
 <p>Projeto desenvolvido com ReactJS, desafio do curso Ignite da Rocketseat</p>
 <h3>Desfio proposto</h3>
